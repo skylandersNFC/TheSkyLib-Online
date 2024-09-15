@@ -1,6 +1,6 @@
 # TheSkyLib Online
 
-Generates a Skylanders figure data dump using a specific UID from an empty card dump.
+Generates a Skylanders figure dump using a specific UID from an empty card dump.
 
 #### Refactored version : [https://skylandersnfc.github.io/TheSkyLib-Online/](https://skylandersnfc.github.io/TheSkyLib-Online/)
 
