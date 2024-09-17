@@ -18,5 +18,41 @@
 		<a id="download" style="display: none">
 			<label>Download</label>
 		</a>
+		<section>
+			<ol>
+			   <li>
+				  You need to <strong>export your empty NFC tag</strong> to a .dump file.
+				  <ul>
+					 <li><em>If you are on <strong>Android</strong>, watch this <strong><a href="https://www.youtube.com/watch?v=hhT0tAHdcMc">video</a></strong></em>.</li>
+					 <li><em>If you are on <strong>Windows</strong> with <strong>ACR122U</strong>, open &quot;<strong><a href="https://github.com/ElDavoo/Mifare-Windows-Tool-Reborn">Mifare Windows Tool v1.6</a></strong></em>&quot;</li>
+					 <li><em>Place an <strong>empty tag</strong> on the <strong>ACR122U</strong> reader</em>.</li>
+					 <li><em>Inside <strong>Mifare Windows Tool v1.6</strong>, click on &quot;<strong>READ TAG</strong></em>&quot;</li>
+					 <li><em>Select &quot;<strong>std.keys</strong>&quot; and click on &quot;<strong>Start Decode &amp; Read tag</strong>&quot;.</em></li>
+					 <li><em>Wait a moment. If you receive any <strong>warnings</strong>, <strong>unplug and plug the USB cable</strong> of the reader back in, then try again</em>.</li>
+					 <li><em>When done, you should see a popup window, with repeating green <strong>FFFFFFFFFFFF</strong> keys and a lot of <strong>white 0</strong></em>.</li>
+					 <li><em>At the bottom of this window, click on &quot;<strong>Save Dump as</strong>&quot;</em>.</li>
+					 <li><em>Give it a name that you would recognize (mine will be <strong>Empty_Tag_1</strong>). Don&#39;t manually type file extensions. MWT will add .dump extension for you.</em></li>
+					 <li><em>Now this newly created &quot;<strong>Empty_Tag_1.dump</strong>&quot; file is your empty card dump. You will need it for &quot;<strong>TheSkyLib-Online</strong>&quot; software</em>.</li>
+				  </ul>
+			   </li>
+			   <li>
+				  You will also need some <strong>Skylanders dump files</strong>.
+				  <ul>
+					 <li><em>You can get those from the <strong><a href="https://skylandersnfc.github.io/Skylanders-Ultimate-NFC-Pack/">Skylanders Ultimate NFC Pack</a></strong></em></li>
+				  </ul>
+			   </li>
+			   <li>Choose the exported <strong>empty tag dump</strong> on the first &quot;<strong>Choose blank dump...</strong>&quot; button.</li>
+			   <li>Choose a desired <strong>Skylander dump</strong> on the second &quot;<strong>Choose toy dump...</strong>&quot; button.</li>
+			   <li>A &quot;<strong>Download</strong>&quot; button will appear from which you can download the modified Skylander dump for this specific card.</li>
+			   <li>
+				  <strong>Write</strong> this modified dump with <strong>Mifare Windows Tool</strong> or <strong>Android MIFARE Classic Tool</strong> on the <strong>same empty tag</strong> which you&#39;ve used in Step 1.
+				  <ul>
+					 <li><em><strong>Don&#39;t write it to other cards</strong>, as it won&#39;t work.</em></li>
+					 <li><em>You need to follow this process for <strong>each different UID-locked card</strong>.</em></li>
+					 <li><em>You will <strong>still write 63 out of 64 blocks</strong> with MWT. <strong>That&#39;s alright</strong>.</em></li>
+				  </ul>
+			   </li>
+			</ol>
+		</section>
 	</body>
 </html>
